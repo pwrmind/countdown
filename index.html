@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Countdown</title>
+	<script type="text/javascript" src="/scripts/main.js"></script>
+	<style type="text/css">
+		.tile {
+		    width: 120px;
+		    height: 120px;
+		    background-color: #00BCD4;
+		    padding: 10px;
+		    display: inline-block;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div class="tiles">
+			<div class="tile">
+				<div class="tile-title">
+					<span>До нового года</span>
+				</div>
+				<div class="countdown">
+					<span></span>
+				</div>
+			</div>
+			<div class="tile">
+				<div class="tile-title">
+					<span>До нового года</span>
+				</div>
+				<div class="countdown">
+					<span></span>
+				</div>
+			</div>
+			<div class="tile">
+				<div class="tile-title">
+					<span>До нового года</span>
+				</div>
+				<div class="countdown">
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function Event() {
+			this.countDownDate = new Date("Jan 1, 2018 00:00:00").getTime();
+		}
+
+		function EventView() {
+			var tile = document.createElement("div");
+			tile.classList.add("tile");
+
+			var title = document.createElement("div");
+			title.classList.add("tile-title");
+
+			tile.appendChild(title);
+
+			this.render = function() {
+				title.innerText = "Hohoho";
+			};
+		}
+
+		function EventController() {
+			var event = new Event();
+			var eventView = new EventView();
+
+			this.render = function (argument) {
+				eventView.render();
+			}
+		}
+
+		var countDownDate = new Date("Jan 1, 2018 00:00:00").getTime();
+
+		var x = setInterval(function() {
+	    var now = new Date().getTime();
+	    var distance = countDownDate - now;
+	    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	    var tiles = document.querySelectorAll(".tile");
+	    for (var index in tiles) {
+	    	var tile = tiles[index];
+	    	var tileTitle = tile.querySelector(".tile-title");//tile.getElementsByClassName("tile-title")[0];
+	    	tileTitle.innerHTML = "До нового года " + days + " дней " + hours + ":" + minutes + ":" + seconds;
+	    };
+	    
+	    // if (distance < 0) {
+	    //     clearInterval(x);
+	    //     document.getElementById("tiles").innerHTML = "EXPIRED";
+	    // }
+	}, 1000);
+	</script>
+</body>
+</html>
