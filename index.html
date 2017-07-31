@@ -5,12 +5,36 @@
 	<title>Countdown</title>
 	<script type="text/javascript" src="/scripts/main.js"></script>
 	<style type="text/css">
+		html, body {
+		    margin: 0px;
+		    padding: 0px;
+		    font-size: 14px;
+		    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
 		.tile {
+		    margin: 0px 4px 4px 0px;
 		    width: 120px;
 		    height: 120px;
 		    background-color: #00BCD4;
 		    padding: 10px;
 		    display: inline-block;
+		}
+
+		.tile-240x120 {
+		    margin: 0px 4px 4px 0px;
+		    width: 240px;
+		    height: 120px;
+		    background-color: #00BCD4;
+		    padding: 10px;
+		    display: inline-block;
+		}
+
+		.time {
+		    font-size: 31px;
+		}
+
+		.days {
+		    font-size: 28px;
 		}
 	</style>
 </head>
@@ -33,7 +57,183 @@
 					<span></span>
 				</div>
 			</div>
+			<div class="tile-240x120">
+				<div class="tile-title">
+					<span>До нового года</span>
+				</div>
+				<div class="countdown">
+					<span></span>
+				</div>
+			</div>
 			<div class="tile">
+				<div class="tile-title">
+					<span>До нового года</span>
+				</div>
+				<div class="countdown">
+					<span></span>
+				</div>
+			</div>
+			<div class="tile-240x120">
+				<div class="tile-title">
+					<span>До нового года</span>
+				</div>
+				<div class="countdown">
+					<span></span>
+				</div>
+			</div>
+			<div class="tile">
+				<div class="tile-title">
+					<span>До нового года</span>
+				</div>
+				<div class="countdown">
+					<span></span>
+				</div>
+			</div>
+			<div class="tile">
+				<div class="tile-title">
+					<span>До нового года</span>
+				</div>
+				<div class="countdown">
+					<span></span>
+				</div>
+			</div>
+			<div class="tile-240x120">
+				<div class="tile-title">
+					<span>До нового года</span>
+				</div>
+				<div class="countdown">
+					<span></span>
+				</div>
+			</div>
+			<div class="tile">
+				<div class="tile-title">
+					<span>До нового года</span>
+				</div>
+				<div class="countdown">
+					<span></span>
+				</div>
+			</div>
+			<div class="tile-240x120">
+				<div class="tile-title">
+					<span>До нового года</span>
+				</div>
+				<div class="countdown">
+					<span></span>
+				</div>
+			</div>
+			<div class="tile">
+				<div class="tile-title">
+					<span>До нового года</span>
+				</div>
+				<div class="countdown">
+					<span></span>
+				</div>
+			</div>
+			<div class="tile">
+				<div class="tile-title">
+					<span>До нового года</span>
+				</div>
+				<div class="countdown">
+					<span></span>
+				</div>
+			</div>
+			<div class="tile-240x120">
+				<div class="tile-title">
+					<span>До нового года</span>
+				</div>
+				<div class="countdown">
+					<span></span>
+				</div>
+			</div>
+			<div class="tile">
+				<div class="tile-title">
+					<span>До нового года</span>
+				</div>
+				<div class="countdown">
+					<span></span>
+				</div>
+			</div>
+			<div class="tile-240x120">
+				<div class="tile-title">
+					<span>До нового года</span>
+				</div>
+				<div class="countdown">
+					<span></span>
+				</div>
+			</div>
+			<div class="tile">
+				<div class="tile-title">
+					<span>До нового года</span>
+				</div>
+				<div class="countdown">
+					<span></span>
+				</div>
+			</div>
+			<div class="tile">
+				<div class="tile-title">
+					<span>До нового года</span>
+				</div>
+				<div class="countdown">
+					<span></span>
+				</div>
+			</div>
+			<div class="tile-240x120">
+				<div class="tile-title">
+					<span>До нового года</span>
+				</div>
+				<div class="countdown">
+					<span></span>
+				</div>
+			</div>
+			<div class="tile">
+				<div class="tile-title">
+					<span>До нового года</span>
+				</div>
+				<div class="countdown">
+					<span></span>
+				</div>
+			</div>
+			<div class="tile-240x120">
+				<div class="tile-title">
+					<span>До нового года</span>
+				</div>
+				<div class="countdown">
+					<span></span>
+				</div>
+			</div>
+			<div class="tile">
+				<div class="tile-title">
+					<span>До нового года</span>
+				</div>
+				<div class="countdown">
+					<span></span>
+				</div>
+			</div>
+			<div class="tile">
+				<div class="tile-title">
+					<span>До нового года</span>
+				</div>
+				<div class="countdown">
+					<span></span>
+				</div>
+			</div>
+			<div class="tile-240x120">
+				<div class="tile-title">
+					<span>До нового года</span>
+				</div>
+				<div class="countdown">
+					<span></span>
+				</div>
+			</div>
+			<div class="tile">
+				<div class="tile-title">
+					<span>До нового года</span>
+				</div>
+				<div class="countdown">
+					<span></span>
+				</div>
+			</div>
+			<div class="tile-240x120">
 				<div class="tile-title">
 					<span>До нового года</span>
 				</div>
@@ -80,11 +280,11 @@
 	    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 	    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 	    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-	    var tiles = document.querySelectorAll(".tile");
+	    var tiles = document.querySelectorAll(".tile, .tile-240x120");
 	    for (var index in tiles) {
 	    	var tile = tiles[index];
 	    	var tileTitle = tile.querySelector(".tile-title");//tile.getElementsByClassName("tile-title")[0];
-	    	tileTitle.innerHTML = "До нового года " + days + " дней " + hours + ":" + minutes + ":" + seconds;
+	    	tileTitle.innerHTML = "До нового года<div class='days'>" + days + " дней</div>" + "<div class='time'>" + hours + ":" + minutes + ":" + seconds + "</div>";
 	    };
 	    
 	    // if (distance < 0) {
