@@ -1,0 +1,38 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow: hidden;
+}
+
+.tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 100vh;
+    align-content: space-evenly;
+}
+
+.tile {
+    width: 140px;
+    height: 140px;
+    background-color: #00BCD4;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px #607D8B;
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+
+.name {
+	text-shadow: 0px 0px 14px black;
+}
+
+.time {
+    font-size: 31px;
+}
+
+.days {
+    font-size: 28px;
+}
