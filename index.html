@@ -31,6 +31,10 @@
             color: white;
 		}
 
+		.name {
+			text-shadow: 0px 0px 14px black;
+		}
+
 		.time {
 		    font-size: 31px;
 		}
@@ -45,6 +49,7 @@
 		<div class="tiles">
 			<div class="tile" data-date="2017.08.04" data-name="Международный день пива" style="background-image: url(images/event_005.jpg)"></div>
 			<div class="tile" data-date="2017.08.12" data-name="Международный день молодежи" style="background-image: url(images/event_006.jpg)"></div>
+			<div class="tile" data-date="2017.08.13" data-name="Международный день левшей" style="background-image: url(images/event_007.jpg)"></div>
 			<div class="tile" data-date="2017.08.20" data-name="Фестиваль красок Холи" style="background-image: url(images/event_001.jpg)"></div>
 			<div class="tile" data-date="2017.09.08" data-name="Огни востока" style="background-image: url(images/event_002.jpg)"></div>
 			<div class="tile" data-date="2017.10.31" data-name="Хеллоуин" style="background-image: url(images/event_003.jpg)"></div>
@@ -72,7 +77,7 @@
 		    	var countDownDate = tile.dataset.date;
 		    	var name = tile.dataset.name;
 		    	var distance = getDistance(new Date(countDownDate).getTime())
-		    	tile.innerHTML = name + "<div class='days'>" + distance.days + " дней</div>" + "<div class='time'>" + distance.hours + ":" + distance.minutes + ":" + distance.seconds + "</div>";
+		    	tile.innerHTML = "<div class='name'>" + name + "</div>" + "<div class='days'>" + distance.days + " дней</div>" + "<div class='time'>" + distance.hours + ":" + distance.minutes + ":" + distance.seconds + "</div>";
 		    };
 		    
 		    if (distance < 0) {
