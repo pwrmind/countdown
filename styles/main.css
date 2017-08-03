@@ -7,11 +7,20 @@ html, body {
 }
 
 .tiles {
-    display: flex;
+/*    display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     height: 100vh;
     align-content: space-evenly;
+    flex-shrink:1;*/
+}
+
+.tile-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    flex-shrink:1;
 }
 
 .tile {
@@ -23,6 +32,22 @@ html, body {
     background-size: cover;
     color: white;
     text-align: center;
+    border-radius: 2px;
+}
+
+.tile-row:nth-child(odd) > .tile:nth-child(3n+2) {
+    min-width: 140px;
+    flex-grow: 2;
+}
+
+.tile-row:nth-child(even) > .tile:nth-child(3n+1) {
+    min-width: 140px;
+    flex-grow: 3;
+}
+
+.tile-row:nth-child(3n+3) > .tile:nth-child(3n+3) {
+    min-width: 140px;
+    flex-grow: 4;
 }
 
 .name {
