@@ -24,7 +24,7 @@
 	    	var countDownDate = tile && tile.dataset && tile.dataset.date;
 	    	var name = tile && tile.dataset && tile.dataset.name;
 	    	var distance = getDistance(countDownDate)
-	    	tile.innerHTML = "<div class='name'>" + name + "</div>" + "<div class='days'>" + distance.days + " дней</div>";
+	    	tile.innerHTML = "<div itemprop='name' class='name'>" + name + "</div>" + "<div class='days'>" + distance.days + " дней</div>";
 	    	// + "<div class='time'>" + distance.hours + ":" + distance.minutes + ":" + distance.seconds + "</div>";
 	    };
 	    
