@@ -38,6 +38,7 @@ html, body {
     height: 100vh;
     align-content: space-evenly;
     flex-shrink:1;*/
+    box-shadow: 0px 0px 2px #27191d;
 }
 
 .tile-row {
@@ -51,13 +52,21 @@ html, body {
 .tile {
     width: 140px;
     height: 140px;
-    background-color: #00BCD4;
+    background-color: #27191d;
     cursor: pointer;
-    box-shadow: 0px 0px 2px #607D8B;
+    box-shadow: inset 0px 0px 2px #27191d;
     background-size: cover;
     color: white;
     text-align: center;
-    border-radius: 2px;
+    /*border-radius: 2px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition-duration: .2s;
+}
+
+.tile:hover {
+    box-shadow: inset 0px 0px 60px #27191d;
 }
 
 .tile-row:nth-child(odd) > .tile:nth-child(3n+2) {
@@ -76,13 +85,16 @@ html, body {
 }
 
 .name {
+    font-size: 1vw;
 	text-shadow: 0px 0px 14px black;
 }
 
 .time {
-    font-size: 31px;
+    font-size: 1vw;
 }
 
 .days {
-    font-size: 28px;
+    font-size: 2.2vw;
 }
+
+font-size: 1vw;
