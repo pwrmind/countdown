@@ -74,6 +74,7 @@ html, body {
 
 .tile:hover {
     box-shadow: inset 0px 0px 60px #27191d;
+    flex-grow: 6;
 }
 
 .tile-row:nth-child(odd) > .tile:nth-child(3n+2) {
@@ -83,12 +84,12 @@ html, body {
 
 .tile-row:nth-child(even) > .tile:nth-child(3n+1) {
     min-width: 140px;
-    flex-grow: 3;
+    flex-grow: 2;
 }
 
 .tile-row:nth-child(3n+3) > .tile:nth-child(3n+3) {
     min-width: 140px;
-    flex-grow: 4;
+    flex-grow: 3;
 }
 
 .name {
@@ -103,7 +104,7 @@ html, body {
     font-size: 2.2vw;
 }
 
-#devPanelbg, #devPanelh {
+#devPanel {
     width: 50px;
     border-radius: 4px;
     background-color: rgba(0, 0, 0, 0.1);
@@ -112,11 +113,7 @@ html, body {
     right: 0px;
 }
 
-#devPanelh {
-    right: 50px;
-}
-
-.bg-image-bg, .bg-image-h {
+.bg-image {
     width: 40px;
     height: 40px;
     margin: 4px 4px 4px 4px;
