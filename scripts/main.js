@@ -43,5 +43,15 @@
 	    return titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ];  
 	}
 
+
 	render();
+})();
+
+(function(){
+	var elements = document.querySelectorAll('.bg-image');
+	for(var i = 0; i < elements.length; i++) {
+		elements[i].onclick = function(e){
+			document.body.style.backgroundImage = e.target.style.backgroundImage;
+		};
+	}
 })();
