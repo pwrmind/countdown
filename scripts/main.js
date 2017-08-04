@@ -46,19 +46,3 @@
 
 	render();
 })();
-
-(function(){
-	var elements = document.querySelectorAll('.bg-image-bg');
-	for(var i = 0; i < elements.length; i++) {
-		elements[i].onclick = function(e){
-			document.body.style.backgroundImage = e.target.style.backgroundImage;
-		};
-	}
-
-	elements = document.querySelectorAll('.bg-image-h');
-	for(var i = 0; i < elements.length; i++) {
-		elements[i].onclick = function(e){
-			document.querySelector("#mainMenu").style.backgroundImage = e.target.style.backgroundImage;
-		};
-	}
-})();

@@ -4,16 +4,21 @@ html, body {
     font-size: 14px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     /*overflow: hidden;*/
+    background-color: #292929;
+}
+
+body {
+    background-image: url('/images/bg/bg_005.png');
 }
 
 #mainMenu {
-    background-color: #27191d;
+    background-color: rgba(242, 0, 0, 1);
     height: 60px;
-    color: #f1d7a3;
+    color: white;
     font-size: 30px;
     line-height: 60px;
     font-weight: bold;
-    text-shadow: 0px 0px 2px #27191d;
+    text-shadow: 0px 0px 2px #f2d5d5;
     padding-left: 15px;
 }
 
@@ -38,12 +43,6 @@ html, body {
 .tiles {
     width: 900px;
     margin: auto;
-/*    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    height: 100vh;
-    align-content: space-evenly;
-    flex-shrink:1;*/
     box-shadow: 0px 0px 2px #27191d;
 }
 
@@ -58,9 +57,9 @@ html, body {
 .tile {
     width: 140px;
     height: 140px;
-    background-color: #27191d;
+    background-color: #292929;
     cursor: pointer;
-    box-shadow: inset 0px 0px 2px #27191d;
+    box-shadow: inset 0px 0px 2px #292929;
     background-size: cover;
     color: white;
     text-align: center;
