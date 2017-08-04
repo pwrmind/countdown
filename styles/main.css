@@ -17,6 +17,12 @@ html, body {
     padding-left: 15px;
 }
 
+#mainMenu > img {
+    width: 50px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
 #mainMenu:after {
     content: "";
     width: 100%;
