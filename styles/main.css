@@ -92,7 +92,7 @@ body {
 }
 
 .name {
-    font-size: 1vw;
+    font-size: 1.1vw;
 }
 
 .time {
@@ -118,4 +118,8 @@ body {
     margin: 4px 4px 4px 4px;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.microdata {
+    display: none;
 }
