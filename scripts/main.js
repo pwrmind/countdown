@@ -25,9 +25,10 @@
 		for (var index in tiles) {
 	    	var tile = tiles[index];
 	    	var countDownDate = tile && tile.dataset && tile.dataset.date;
-	    	var name = tile && tile.dataset && tile.dataset.name;
+	    	//var name = tile && tile.dataset && tile.dataset.name;
+	    	var daysBlock = tile && tile.querySelector(".days");
 	    	var distance = getDistance(countDownDate)
-	    	tile.innerHTML = "<div itemprop='name' class='name'>" + name + "</div>" + "<div class='days'>" + distance.days + "</div>";
+	    	daysBlock.innerHTML = "<div class='days'>" + distance.days + "</div>";
 	    	// + "<div class='time'>" + distance.hours + ":" + distance.minutes + ":" + distance.seconds + "</div>";
 	    };
 	    
