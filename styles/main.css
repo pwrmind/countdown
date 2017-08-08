@@ -123,3 +123,23 @@ body {
 .microdata {
     display: none;
 }
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    cursor: pointer;
+    height: 140px;
+    width:140px;
+    background-color: rgb(247, 250, 209);
+    padding: 8px;
+    display: inline-block;
+    margin-bottom: 4px;
+    border-radius: 2px;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #8bc34a;
+    color: #000000;
+}
