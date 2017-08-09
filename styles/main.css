@@ -11,14 +11,26 @@ body {
     background-image: url('/images/bg/bg_005.png');
 }
 
-#mainMenu {
-    background-color: rgba(242, 0, 0, 1);
-    height: 60px;
-    color: white;
+h1 {
+    font-size: 30px;
+    margin: 0px;
     font-size: 30px;
     line-height: 60px;
     font-weight: bold;
     text-shadow: 0px 0px 2px #f2d5d5;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 0px;
+    font-weight: bold;
+    text-shadow: 0px 0px 2px #f2d5d5;
+}
+
+#mainMenu {
+    background-color: rgba(242, 0, 0, 1);
+    height: 60px;
+    color: white;
     padding-left: 15px;
 }
 
