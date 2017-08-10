@@ -8,13 +8,16 @@
 	    var distance = Math.floor((countDownDate - now) / (1000 * 60 * 60 * 24));
 	    if(distance === 364) {
 	    	return { days: "Сегодня" }
-	    };
-		return {
-			days: distance + " " + declOfNum(distance, ["днень","дня","дней"]),
-	    	hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-	    	minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
-	    	seconds: Math.floor((distance % (1000 * 60)) / 1000)
-		};
+	    } else if(distance === 0) {
+	    	return { days: "Завтра" }
+	    } else {
+			return {
+				days: distance + " " + declOfNum(distance, ["днень","дня","дней"]),
+		    	hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+		    	minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+		    	seconds: Math.floor((distance % (1000 * 60)) / 1000)
+			};
+		}
 	}
 
 	var x = setInterval(function() {
@@ -27,9 +30,16 @@
 	    	if(tile !== null) {
 		    	var countDownDate = tile && tile.dataset && tile.dataset.date;
 		    	if(tile.querySelector) {
-			    	var daysBlock = tile && tile.querySelector(".days");
+			    	var daysBlock = tile && tile.querySelector(".date");
 			    	var distance = getDistance(countDownDate)
-			    	if(daysBlock && daysBlock.innerHTML !== null) daysBlock.innerHTML = "<div class='days'>" + distance.days + "</div>";
+			    	if(daysBlock && daysBlock.innerHTML !== null) {
+			    		if (parseInt(distance.days)) {
+			    			daysBlock.innerHTML = "<div>через</div><div class='days'>" + distance.days + "</div>";	
+			    		} else {
+			    			daysBlock.innerHTML = "<div class='days'>" + distance.days + "</div>";
+			    		}
+			    		
+			    	}
 		    	}
 	    	}
 	    	// + "<div class='time'>" + distance.hours + ":" + distance.minutes + ":" + distance.seconds + "</div>";
