@@ -20,9 +20,9 @@
 		}
 	}
 
-	var x = setInterval(function() {
-	    render();
-	}, 1000);
+	// var x = setInterval(function() {
+	//     render();
+	// }, 1000);
 
 	function render() {
 		for (var index in tiles) {
