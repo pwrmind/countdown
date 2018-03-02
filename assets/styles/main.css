@@ -64,6 +64,10 @@ h2 {
     background: linear-gradient(#d30000,rgba(0,0,0,0.0));
 }
 
+.content {
+    margin-top: 60px;
+}
+
 #eventBlock {
     position: fixed;
     top: 60px;
