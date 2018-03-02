@@ -28,10 +28,22 @@ h2 {
 }
 
 #mainMenu {
-    background-color: rgba(242, 0, 0, 1);
+    background-color: #f20000;
     height: 60px;
-    color: white;
+    color: #fff;
     padding-left: 15px;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+#mainMenu > span {
+    margin: 0;
+    font-size: 30px;
+    line-height: 60px;
+    font-weight: 700;
+    text-shadow: 0 0 2px #f2d5d5;
 }
 
 #mainMenu > img {
@@ -46,10 +58,10 @@ h2 {
     height: 6px;
     position: absolute;
     top: 60px;
-    left: 0px;
+    left: 0;
     display: block;
     z-index: 100;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.0));
+    background: linear-gradient(#d30000,rgba(0,0,0,0.0));
 }
 
 #eventBlock {
