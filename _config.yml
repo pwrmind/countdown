@@ -1,0 +1,17 @@
+# basic options
+title: Дай знать, Москва!
+author: GitHub User
+email: your-email@domain.com
+description: A wonderful site
+twitter_username: jekyllrb
+github_username:  jekyll
+lang: ru
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+# theme: minima
+collections:
+  events:
+    output: true
+    permalink: pretty

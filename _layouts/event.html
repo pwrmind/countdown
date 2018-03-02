@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<style type="text/css">
+	.tiles {
+		filter: blur(2px);
+	}
+</style>
+<div>
+    <div id="mainMenu">
+        <h1>{{ site.title }}</h1>
+    </div>
+    <div class="tiles">
+        <div class="tile-row">
+            {% for post in site.posts %}
+            <a href="{{ post.url | relative_url }}" itemscope itemtype="http://schema.org/Event" class="tile" style="background-image: url('{{ post.image | relative_url }}')">
+                <h2 itemprop="name" class="name">{{ post.title | escape }}</h2>
+                <div class="date">
+                    <div>через</div>
+                    <div class="days"></div>
+                </div>
+                <div class="microdata">
+                    <div itemprop="startDate"></div>
+                    <div itemprop="endDate"></div>
+                    <div itemprop="location"></div>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+    <a id="eventBlock" href="{{ "/" | relative_url }}">
+    	<h2 itemprop="name" class="name">{{ page.name }}</h2>
+    	<div class="image" style="background-image: url('{{ page.image | relative_url }}')"></div>
+    	<div class="description">{{ page.description }}</div>
+    	<div class="microdata">
+            <div itemprop="startDate"></div>
+            <div itemprop="endDate"></div>
+            <div itemprop="location"></div>
+        </div>
+    </a>
+</div>

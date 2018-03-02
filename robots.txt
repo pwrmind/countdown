@@ -1,5 +1,4 @@
-User-agent: *
-Allow: /
-Crawl-delay: 60
-Host: www.letmeknow.moscow
-Sitemap: https://sourcemaking.com/sitemap.xml
+---
+---
+user-agent: *
+sitemap: {{ site.url }}/sitemap.xml

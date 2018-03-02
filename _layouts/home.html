@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div>
+    <div id="mainMenu">
+        <h1>{{ site.title }}</h1>
+    </div>
+    <div class="tiles">
+        <div class="tile-row">
+            {% for post in site.posts %}
+            <a href="{{ post.url | relative_url }}" itemscope itemtype="http://schema.org/Event" class="tile" style="background-image: url('{{ post.image | relative_url }}')">
+                <h2 itemprop="name" class="name">{{ post.title | escape }}</h2>
+                <div class="date">
+                    <div>через</div>
+                    <div class="days"></div>
+                </div>
+                <div class="microdata">
+                    <div itemprop="startDate"></div>
+                    <div itemprop="endDate"></div>
+                    <div itemprop="location"></div>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
