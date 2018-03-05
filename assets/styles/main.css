@@ -6,6 +6,7 @@ html, body {
     /*overflow: hidden;*/
     background-color: #292929;
     background-image: url('/assets/images/bg/bg_005.png');
+    overflow-x: hidden;
 }
 
 body {
