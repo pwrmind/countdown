@@ -70,7 +70,7 @@ h2 {
 }
 
 #eventBlock {
-    position: fixed;
+    position: absolute;
     top: 60px;
     left: 0px;
     width: 100%;
