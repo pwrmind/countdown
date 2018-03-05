@@ -20,9 +20,9 @@ layout: default
                     <div class="days"></div>
                 </div>
                 <div class="microdata">
-                    <div itemprop="startDate"></div>
-                    <div itemprop="endDate"></div>
-                    <div itemprop="location"></div>
+                    <div itemprop="startDate">{{ post.startDate | escape }}</div>
+                    <div itemprop="endDate">{{ post.startDate | escape }}</div>
+                    <div itemprop="location">{{ post.location | escape }}</div>
                 </div>
             </a>
             {% endfor %}
@@ -33,9 +33,9 @@ layout: default
     	<div class="image" style="background-image: url('{{ page.image | relative_url }}')"></div>
     	<div class="description">{{ page.description }}</div>
     	<div class="microdata">
-            <div itemprop="startDate"></div>
-            <div itemprop="endDate"></div>
-            <div itemprop="location"></div>
+            <div itemprop="startDate">{{ page.startDate | escape }}</div>
+            <div itemprop="endDate">{{ page.startDate | escape }}</div>
+            <div itemprop="location">{{ page.location | escape }}</div>
         </div>
     </a>
 </div>
