@@ -14,7 +14,7 @@ layout: default
         <div class="tile-row">
             {% for post in site.posts %}
             <a href="{{ post.url | relative_url }}" itemscope itemtype="http://schema.org/Event" class="tile" style="background-image: url('{{ post.image | relative_url }}')">
-                <h1 itemprop="name" class="name">{{ post.title | escape }}</h1>
+                <h2 itemprop="name" class="name">{{ post.title | escape }}</h2>
                 <div class="date">
                     <div>через</div>
                     <div class="days"></div>
@@ -29,7 +29,7 @@ layout: default
         </div>
     </div>
     <a id="eventBlock" href="{{ "/" | relative_url }}">
-    	<h2 itemprop="name" class="name">{{ page.title }}</h2>
+    	<h1 itemprop="name" class="name">{{ page.title }}</h1>
     	<div class="image" style="background-image: url('{{ page.image | relative_url }}')"></div>
     	<div class="description">{{ page.description }}</div>
     	<div class="microdata">
