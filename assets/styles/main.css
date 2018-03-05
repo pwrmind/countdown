@@ -86,7 +86,7 @@ h2 {
     -webkit-animation: fadein 1s linear 1 normal forwards;
 }
 
-@-webkit-keyframes fadein{
+@-webkit-keyframes fadein {
     from{
        opacity: 0;
     }
