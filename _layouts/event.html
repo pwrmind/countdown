@@ -28,7 +28,7 @@ layout: default
             {% endfor %}
         </div>
     </div>
-    <a id="eventBlock" href="{{ "/" | relative_url }}">
+    <a id="eventBlock" href="{{ "/" | relative_url }}" itemscope itemtype="http://schema.org/Event" >
     	<h1 itemprop="name" class="name">{{ page.title }}</h1>
     	<div class="image" style="background-image: url('{{ page.image | relative_url }}')"></div>
     	<div class="description">{{ page.description }}</div>
