@@ -82,14 +82,17 @@ h2 {
     text-decoration: none;
 }
 
-@keyframes #eventBlock{
-    from  { opacity:0; }
-    to { opacity:0; }
+#eventBlock {
+    -webkit-animation: fadein 1s linear 1 normal forwards;
 }
 
-@-webkit-keyframes #eventBlock{
-    from  { opacity:0; }
-    to { opacity:0; }
+@-webkit-keyframes fadein{
+    from{
+       opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 #eventBlock > .name {
