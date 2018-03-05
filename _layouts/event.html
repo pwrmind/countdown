@@ -20,8 +20,8 @@ layout: default
                     <div class="days"></div>
                 </div>
                 <div class="microdata">
-                    <div itemprop="startDate">{{ post.startDate | escape }}</div>
-                    <div itemprop="endDate">{{ post.startDate | escape }}</div>
+                    <div itemprop="startDate">{{ post.startDate | date: "%Y-%m-%d" }}</div>
+                    <div itemprop="endDate">{{ post.startDate | date: "%Y-%m-%d" }}</div>
                     <div itemprop="location">{{ post.location | escape }}</div>
                 </div>
             </a>
@@ -33,8 +33,8 @@ layout: default
     	<div class="image" style="background-image: url('{{ page.image | relative_url }}')"></div>
     	<div class="description">{{ page.description }}</div>
     	<div class="microdata">
-            <div itemprop="startDate">{{ page.startDate | escape }}</div>
-            <div itemprop="endDate">{{ page.startDate | escape }}</div>
+            <div itemprop="startDate">{{ page.startDate | date: "%Y-%m-%d" }}</div>
+            <div itemprop="endDate">{{ page.startDate | date: "%Y-%m-%d" }}</div>
             <div itemprop="location">{{ page.location | escape }}</div>
         </div>
     </a>
