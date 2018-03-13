@@ -1,8 +1,8 @@
 ---
 layout: event
-title: Tomb Raider: Лара Крофт
+title: Tomb Raider - Лара Крофт
 image: /assets/images/2018-03-15-tomb-raider.jpg
-description: Фильм Tomb Raider: Лара Крофт Tomb Raider, 2018 смотрите трейлеры, рецензии, обзоры и отзывы
+description: Фильм Tomb Raider - Лара Крофт Tomb Raider, 2018 смотрите трейлеры, рецензии, обзоры и отзывы
 startDate: 2018-03-15
 endDate: 2018-03-15
 location:
