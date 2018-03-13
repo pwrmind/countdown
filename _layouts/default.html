@@ -13,9 +13,9 @@
 		<meta name="description" content="Дай знать, Москва! - {{ page.title }} - праздники, события, мероприятия, концерты, премьеры, памятные даты">
 		<meta name="author" content="PWRMind">
 		<meta property="og:title" content="{{ site.title }} - {{ page.title }}" />
-		<meta property="og:url" content="{{ "" | absolute_url }}" />
+		<meta property="og:url" content="{{ site.url | absolute_url }}" />
 		{% if page.image %}
-		<meta property="og:image" content="{{ page.image | relative_url }}" />
+		<meta property="og:image" content="{{ page.image | absolute_url }}" />
 		{% endif %}
 	</head>
 	<body itemscope="" itemtype="http://schema.org/WebPage">
