@@ -107,6 +107,7 @@ h2 {
 #eventBlock > .event-details {
     width: 620px;
     margin: auto;
+    background-color: rgba(0,0,0,0.4);
 }
 
 .event-details > .image {
