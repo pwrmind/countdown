@@ -103,15 +103,19 @@ h2 {
     line-height: 60px;
 }
 
-#eventBlock > .image {
+#eventBlock > .event-details {
     width: 620px;
+}
+
+.event-details > .image {
+    /*width: 620px;*/
     height: 360px;
     background-size: cover;
     margin: auto;
 }
 
-#eventBlock > .description {
-    width: 620px;
+.event-details > .description {
+    /*width: 620px;*/
     margin: auto;
     text-align: left;
     padding-top: 14px;

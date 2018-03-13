@@ -29,15 +29,15 @@ layout: default
         </div>
     </div>
     <a id="eventBlock" href="{{ "/" | relative_url }}" itemscope itemtype="http://schema.org/Event" >
-    	<h1 itemprop="name" class="name">{{ page.title }}</h1>
-    	<div class="image" style="background-image: url('{{ page.image | relative_url }}')"></div>
-    	<div class="description">{{ page.description }}</div>
-    	<div class="microdata">
-            <div itemprop="startDate">{{ page.startDate | date: "%Y-%m-%d" }}</div>
-            <div itemprop="endDate">{{ page.startDate | date: "%Y-%m-%d" }}</div>
-            <div itemprop="location">{{ page.location | escape }}</div>
-        </div>
-        <div>
+    	<div class="event-details">
+            <h1 itemprop="name" class="name">{{ page.title }}</h1>
+        	<div class="image" style="background-image: url('{{ page.image | relative_url }}')"></div>
+        	<div class="description">{{ page.description }}</div>
+        	<div class="microdata">
+                <div itemprop="startDate">{{ page.startDate | date: "%Y-%m-%d" }}</div>
+                <div itemprop="endDate">{{ page.startDate | date: "%Y-%m-%d" }}</div>
+                <div itemprop="location">{{ page.location | escape }}</div>
+            </div>        
             {{ content }}
         </div>
     </a>
