@@ -84,7 +84,7 @@ h2 {
 }
 
 #eventBlock {
-    -webkit-animation: fadein 1s linear 1 normal forwards;
+    -webkit-animation: fadein 0.8s ease-in-out 1 normal forwards;
 }
 
 @-webkit-keyframes fadein {

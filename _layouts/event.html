@@ -37,5 +37,8 @@ layout: default
             <div itemprop="endDate">{{ page.startDate | date: "%Y-%m-%d" }}</div>
             <div itemprop="location">{{ page.location | escape }}</div>
         </div>
+        <div>
+            {{ content }}
+        </div>
     </a>
 </div>
