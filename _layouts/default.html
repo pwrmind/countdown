@@ -12,6 +12,11 @@
 		<meta name="keywords" content="через сколько когда праздники события мероприятия концерты премьеры памятные даты отпуск сериал">
 		<meta name="description" content="Дай знать, Москва! - {{ page.title }} - праздники, события, мероприятия, концерты, премьеры, памятные даты">
 		<meta name="author" content="PWRMind">
+		<meta property="og:title" content="{{ site.title }} - {{ page.title }}" />
+		<meta property="og:url" content="{{ absolute_url }}" />
+		{% if page.image %}
+		<meta property="og:image" content="{{ page.image | relative_url }}" />
+		{% endif %}
 	</head>
 	<body itemscope="" itemtype="http://schema.org/WebPage">
 		{{ content }}
