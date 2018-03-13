@@ -78,12 +78,9 @@ h2 {
     min-height: 100vh;
     background: rgba(0,0,0,0.2);
     color: white;
-    text-align: center;
+    /*text-align: center;*/
     text-shadow: 0px 0px 8px #000000;
     text-decoration: none;
-}
-
-#eventBlock {
     -webkit-animation: fadein 0.8s ease-in-out 1 normal forwards;
 }
 
@@ -128,6 +125,7 @@ h2 {
 .event-details > .event-content {
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 10px;
 }
 
 .tiles {
