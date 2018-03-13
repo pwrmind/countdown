@@ -29,8 +29,8 @@ layout: default
         </div>
     </div>
     <a id="eventBlock" href="{{ "/" | relative_url }}" itemscope itemtype="http://schema.org/Event" >
-    	<div class="event-details">
-            <h1 itemprop="name" class="name">{{ page.title }}</h1>
+        <h1 itemprop="name" class="name">{{ page.title }}</h1>
+        <div class="event-details">
         	<div class="image" style="background-image: url('{{ page.image | relative_url }}')"></div>
         	<div class="description">{{ page.description }}</div>
         	<div class="microdata">
@@ -38,7 +38,9 @@ layout: default
                 <div itemprop="endDate">{{ page.startDate | date: "%Y-%m-%d" }}</div>
                 <div itemprop="location">{{ page.location | escape }}</div>
             </div>        
-            {{ content }}
+            <div class="event-content">
+                {{ content }}
+            </div>
         </div>
     </a>
 </div>

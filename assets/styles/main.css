@@ -101,25 +101,32 @@ h2 {
     font-size: 2.5vw;
     background-color: rgba(0,0,0,0.4);
     line-height: 60px;
+    text-align: center;
 }
 
 #eventBlock > .event-details {
     width: 620px;
+    margin: auto;
 }
 
 .event-details > .image {
-    /*width: 620px;*/
     height: 360px;
     background-size: cover;
     margin: auto;
 }
 
 .event-details > .description {
-    /*width: 620px;*/
     margin: auto;
     text-align: left;
     padding-top: 14px;
     font-size: 1vw;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.event-details > .event-content {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .tiles {
