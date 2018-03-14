@@ -2,7 +2,7 @@
 layout: event
 title: Концерт Apocalyptica
 image: /assets/images/2018-03-26-apocalyptica.png
-description: Концерт Apocalyptica в Москве 26 марта
+description: Концерт Apocalyptica в Москве 26 марта 20:00
 startDate: 2018-03-26
 endDate: 2018-03-26
 location: Крокус Сити Холл
