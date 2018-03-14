@@ -1,7 +1,7 @@
 ---
 layout: event
 title: Концерт Guano Apes
-image: /assets/images/8c0b6728-443f-4a71-bfa2-34a8dbf857de.png
+image: /assets/images/2018-04-15-guano-apes.png
 description: Концерт Guano Apes в Москве 15 апреля
 startDate: 2018-04-15
 endDate: 2018-04-15
